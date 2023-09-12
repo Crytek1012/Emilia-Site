@@ -1,0 +1,35 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden; /* Disable scrolling for the entire page */
+}
+
+#page-wrapper {
+  margin-top: 80px; /* Set the margin-top to match the height of your navbar */
+  height: 100vh;
+}
+
+/* CSS for the reload indicator */
+#reload-indicator {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  display: none;
+  transition: transform 0.3s ease;
+}
+
+#reload-arrow {
+  animation: rotate 1s infinite linear;
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+

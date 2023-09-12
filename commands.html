@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Emilia-tan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel='stylesheet' href='commands.css'>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body class="dark-mode">
+
+  <div id="reload-indicator">
+    <span id="reload-arrow">↻</span>
+  </div>
+
+  <div id="page-wrapper">
+    <div id="commands-wrapper">
+
+      <div id="commands-description">
+
+        <h1>Commands</h1>
+        <p>Commands that Emilia-tan offers.<br><br>
+          Click on a command to expand it
+        </p>
+      </div>
+
+      <div id="commands-category">
+
+        <button class="Moderation active">Moderation</button>
+        <button class="Utility">Utility</button>
+        <button class="Interactions">Interactions</button>
+        <button class="Music">Music</button>
+        <button class="Ship">Ship</button>
+        <button class="Misc">Misc</button>
+
+      </div>
+
+      
+      <div id="search-container">
+        <form action="" id="search-bar">
+        <input type="text" placeholder="Search a command" name="search">
+        <p id="search-command" class="bx bx-search"></p>
+      </form>
+      </div>
+
+      <div id="commands-list"></div>
+
+    </div>
+  </div>
+
+  <button id="scrollToTopButton" class="scroll-button">
+    <div class='bx bx-up-arrow-alt'></div>
+</button>
+
+</body>
+
+<script defer src="/navbar/navbarLoader.js"></script>
+<script src="/functions/reloadPage.js"></script>
+<script defer type="module" src="/functions/commands/commandButtons.js"></script>
+<script src="/functions/commands/scrollToTop.js"></script>
+<script type="module" src="/functions/commands/searchFilterCommands.js"></script>
+</html>

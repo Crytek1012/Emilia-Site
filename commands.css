@@ -1,0 +1,259 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.scroll-button {
+  display: none; /* Initially hide the button */
+  position: fixed;
+  bottom: 20px; /* Adjust as needed for your design */
+  right: 5px; /* Adjust as needed for your design */
+  z-index: 1000;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  
+  color: #ffffff; /* Button text color */
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.arrow-up {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+#search-container {
+width: 100%;
+margin-top: 30px;
+margin-bottom: 30px;
+padding-top: 20px;
+padding-bottom: 20px;
+border-radius: 60px;
+}
+
+#search-bar {
+  width: 100%;
+  border-radius: 60px;
+  align-items: center; /* Vertically center items */
+}
+
+#search-bar input {
+  vertical-align: middle;
+  flex-grow: 1;
+  text-align: left;
+
+  background: transparent;
+  border: 0;
+  outline: none;
+  font-size: 1.3rem;
+  margin-right: -50px;
+}
+
+#search-bar #search-command {
+  vertical-align: middle;
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+
+#searchButton:hover {
+  background-color: #0056b3; /* Hover color for the button */
+}
+
+#page-wrapper {
+  margin-top: 80px; /* Set the margin-top to match the height of your navbar */
+  height: 100vh;
+}
+
+#commands-wrapper {
+  height: auto;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+#commands-description {
+  margin-top: 20px;
+  display: block;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+#commands-description h1 {
+  padding-bottom: 10px;
+}
+
+#commands-description p {
+  font-weight: bold;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+#commands-category {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#commands-category button {
+  width: 100%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 10px;
+  font-weight: bold;
+
+  border-color: transparent;
+  background-color: transparent;
+}
+
+#commands-category button.active {
+  background-color: green;
+  width: 80%;
+}
+
+#commands-category button:hover {
+  background-color: gray;
+  width: 80%;
+}
+
+#commands-list {
+  margin-top: 30px;
+  display: block;
+  color: white;
+}
+
+#commands-list .command-box .command-name{
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #a700c5;
+
+}
+
+#commands-list .command-box .command-description {
+  margin-bottom: 10px;
+  padding-bottom: 10px; /* Add padding to create space between text and border */
+  font-size: 1rem;
+
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+#commands-list .command-box .command-usage {
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+#commands-list .command-box .command-aliases {
+
+  padding-top: 10px;
+
+  border-top: 2px silver solid;
+  margin-top: 10px;
+
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+#commands-list .command-box{
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  font-size: 1.2rem;
+
+  cursor: pointer;
+}
+
+/* dark-mode */
+
+body.dark-mode #search-bar {
+  background: #262a36;
+}
+
+body.dark-mode #search-container {
+  background-color: #262a36;
+}
+
+body.dark-mode #search-bar input {
+  color: #cac7ff;
+}
+
+body.dark-mode #commands-description {
+  background-color: #262a36;
+  color: white;
+}
+
+body.dark-mode #commands-category button {
+  color: white;
+}
+
+body.dark-mode #commands-category {
+  background-color: #262a36;
+}
+
+body.dark-mode #commands-list .command-box{
+  background-color: #262a36;
+}
+
+body.dark-mode #commands-list .command-box .command-description {
+  border-bottom: 2px silver solid;
+}
+
+body.dark-mode .scroll-button {
+  background-color: silver;
+}
+
+/* light-mode */
+
+body.light-mode #search-bar {
+  background: silver;
+}
+
+body.light-mode #search-container {
+  background: silver;
+}
+
+body.light-mode #search-bar input {
+  color: black;
+}
+
+body.light-mode #search-bar #search-command{
+  color: black;
+}
+
+body.light-mode #commands-description{
+  background-color: silver;
+  color: black;
+}
+
+body.light-mode #commands-category button {
+  color: black;
+}
+
+body.light-mode #commands-category {
+  background-color: silver;
+}
+
+body.light-mode #commands-list .command-box{
+  background-color: silver;
+  color: black;
+}
+
+body.light-mode #commands-list .command-box .command-description {
+  border-bottom: 2px #222727 solid;
+}
+
+body.light-mode .scroll-button {
+  background-color: black;
+}

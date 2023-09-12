@@ -1,0 +1,166 @@
+#navbar {
+  display: flex;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0; 
+  width: 100vw;
+  height: 80px; /* Set the height of your navbar */
+}
+
+#reload-indicator {
+  display: none;
+}
+
+#navbar #navbar-container {
+  height: inherit;
+}
+
+#navbar-header  {
+  padding: 19px;
+  display: flex;
+  width: 100vw;
+  align-items: center;
+}
+
+#navbar-logo {
+  font-family: Stencil Std, fantasy;
+  font-size: 2rem;
+  text-decoration: none;
+
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#navbar #toggle-DarkMode {
+  text-decoration: none;
+  border-color: transparent;
+  background-color: transparent;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-left: auto;
+
+}
+
+#navbar-toggleMenu {
+  font-size: 2.2rem;
+  margin-left: auto; /* Center the toggleMenu to the right */
+}
+
+#navbar-toggleMenu:hover {
+  cursor: pointer;
+}
+
+#navbar-links {
+  display: none;
+}
+
+#navbar-toggleMenu {
+  padding: 4px;
+  border: none;
+  background-color: transparent;
+}
+
+
+/* FOR ENABLED */
+
+#navbar.enabled {
+  align-items: unset;
+  height: 100vh;
+}
+
+
+#navbar.enabled #navbar-header {
+  display: flex;
+  align-items: center;
+  border-bottom: none;
+}
+
+#navbar-container {
+  position: relative;
+  width: 100%;
+  height: 100%; /* Occupies the entire height of #navbar */
+  margin: 0;
+  padding: 0;
+}
+
+#navbar.enabled #navbar-links {
+  display: flex;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: column;  
+  }
+
+#navbar.enabled #navbar-links .link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 100vw;
+  padding-right: 100vw;
+  text-align: center;
+}
+
+#navbar.enabled #navbar-links .link:last-child {
+  background-color: green;
+}
+
+#navbar.enabled #navbar-links .link:hover {
+  background-color: gray;
+}
+
+/* dark mode */
+
+body.dark-mode {
+  background-color: black;
+}
+
+body.dark-mode #navbar-container {
+  background-color: #262a36;
+}
+
+body.dark-mode #navbar-logo {
+  color: white;
+}
+
+body.dark-mode #navbar-toggleMenu {
+  color: white;
+}
+
+body.dark-mode #toggle-DarkMode {
+  color: white;
+}
+
+
+/* light mode */
+
+body.light-mode {
+  background-color: white;
+}
+
+body.light-mode #navbar #navbar-container{
+  background-color: white;
+}
+
+body.light-mode #navbar #navbar-header {
+  border-bottom: 2px #262a36 solid;
+}
+
+body.light-mode #navbar-logo {
+  color: black;
+}
+
+body.light-mode #navbar #navbar-links .link {
+  color: black;
+}
+
+body.dark-mode #navbar #navbar-header {
+  border-bottom: 2px silver solid;
+}
+
+
+
